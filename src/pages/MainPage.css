@@ -1,0 +1,35 @@
+.text-center {
+    text-align: center;
+}   
+.title {
+    font-size: 30px;
+    font-weight: 800;
+}
+.sub-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+.text-gray {
+    color:gray;
+}
+.bg-green{
+    background-color: green;
+}
+.bg-yellow{
+    background-color: yellow;
+}
+.float-right{
+    float:right;
+    margin-right: 20px;
+}
+.query-info-wrapper{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.hidden {
+    height: 1px;
+    visibility: hidden;
+    /* flex:1; */
+}

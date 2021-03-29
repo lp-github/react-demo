@@ -1,0 +1,84 @@
+:root{
+    --card-width:300px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding:20px;
+}
+.card-item {
+    flex-basis: var(--card-width);
+    flex-grow: 1;
+    min-width: 230px;
+    height: 500px;
+    border:1px solid gray;
+    margin:10px;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+    /* background-color: red; */
+}
+.card-item:hover{
+    box-shadow: 5px 5px 5px gray,-5px -5px 5px gray;
+}
+.hidden {
+    flex-basis: var(--card-width);
+    flex-grow: 1;
+    height: 1px;
+    min-height: 1px;
+    visibility: hidden;
+}
+.block-wrapper{
+    overflow: hidden;
+    word-break: keep-all;
+    white-space: nowrap;
+    width: 100%;
+    
+
+    display: flex;
+}
+.block{
+    font-size: large;
+    padding:0 5px 0 5px;
+    margin-right: 10px;
+}
+.param-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.param-item{
+
+}
+
+.card-bottom{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right:0;
+    padding-bottom: 3px;
+}
+.card-bottom:hover{
+    color:#1890ff;
+}
+.text-pink {
+    color:rgb(235,47,150);
+}
+.bg-light-pink{
+    background-color: rgba(235,47,150,0.3)
+}
+.text-green{
+    color:green;
+}
+.bg-light-green{
+    background-color: rgba(0,255,0,0.3);
+}
+.border-pink{
+    border:1px solid rgb(235,47,150);
+}
+.border-green{
+    border:1px solid green;
+}
+

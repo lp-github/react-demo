@@ -1,13 +1,54 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+    --card-width:30%;
+    --card-margin:1.5%;
+}
+.box {
+    background-color:blue;
+}
+.game {
+    background-color:red;
+}
+.text {
+    color: green;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    background-color: lightblue;
+  
+}
+.card-item {
+    flex-basis: 300px;
+    height: 200px;
+    flex-grow: 1;
+    margin: 10px;
+    /* flex-grow: 1; */
+    background-color: green;
+    
+}
+.card-item.hidden{
+   height: 1px;
+   visibility: hidden;
+}
+@media  (max-width:1000px){
+    .text {
+        color:red
+    }
+    :root {
+        --card-width:45%;
+        --card-margin:2.5%
+    }
+}
+@media (max-width:500px){
+    .text {
+        color:blue
+    }
+    :root {
+        --card-width:90%;
+        --card-margin:5%;
+    }
 }
